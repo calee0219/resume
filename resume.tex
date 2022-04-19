@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemTwo}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}%\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingOne}[2]{
+  \vspace{-1pt}%\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    %   \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubItemTwo}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{}%\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{}%\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% %----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://daisy91530.github.io/}{\Huge Tieh (Daisy) Chu}}\\\\
+% %   \vspace{0.5em}
+%   \color{blue}\href{https://www.linkedin.com/in/daisy-tieh-chu/}{linkedin.com/in/daisy-tieh-chu} & Email : \color{blue}\href{mailto:tiehchu2@illinois.edu}{tiehchu2@illinois.edu}\\
+  
+%   \color{blue}\href{https://daisy91530.github.io/}{https://daisy91530.github.io/} & Mobile : +886-983-234-938 \\
+% \end{tabular*}
+
+%----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://daisy91530.github.io/}{\Huge Tieh (Daisy) Chu}}\\
+% %   \vspace{0.5em}
+
+    
+%         \color{blue}\href{mailto:tiehchu2@illinois.edu}{tiehchu2@illinois.edu}      \color{blue}\href{https://www.linkedin.com/in/daisy-tieh-chu/}{linkedin.com/in/daisy-tieh-chu}       \color{blue}\href{https://daisy91530.github.io/}{https://daisy91530.github.io/}\\
+    
+  
+% \end{tabular*}
+\begin{center}
+    \textbf{{\Huge Chia-An Lee}}\\
+    \vspace{0.5em}
+    
+    \color{black}(+886) 905-690-190
+    \color{blue}\href{mailto:sz110010@gmail.com}{sz110010@gmail.com}\\
+    % \color{black} $\diamond$
+    \color{blue}\href{https://www.linkedin.com/in/calee0219/}{LinkedIn}\color{black}$,$ \color{blue}\href{https://github.com/calee0219}{GitHub}\color{black}$,$ \color{blue}\href{https://calee.xyz/}{calee.xyz}
+    
+\end{center}
+\vspace{-1em}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Yang Ming Chiao Tung University}{Jun. 2019 -- Jul. 2021}
+      {Master of Science in Computer Science}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Advisor: \href{https://people.cs.nctu.edu.tw/~jcc/}{Jyh-Cheng Chen} @ \href{http://wire.cs.nctu.edu.tw/}{Wireless Internet Research and Engineering Laboratory}}
+        \resumeItemTwo{Research focuses on 5G core network}
+      \resumeItemListEnd
+    \resumeSubheading
+      {National Chiao Tung University}{Sep. 2015 -- Jun. 2019}
+      {Bachelor of Science in Computer Science}{Hsinchu, Taiwan}
+    %   \resumeItemListStart
+    %     \resumeItemTwo{Coursework: Parallel Programming, Network Programming, Computer Security, IoT, Computer Network}
+    %     \resumeItemTwo{Dean's List Fall 2016, Fall 2017, Fall 2018, Spring 2019}
+    %   \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Intern (BlockChain)}{Jul. 2017 -- Dec. 2017}
+      {\href{https://www.nchc.org.tw/}{National Center for High-Performance Computing}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        % \resumeItemTwo{Contributed to {\bf 24+ slot games} on the game server {\bf (20k users per day)} and succeeded in handling game-related issues with cross-functional teams.}
+        \resumeItemTwo{Maintaining a private chain inside NCHC's server and testing some applications on it.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Intern (Container Platform)}{Jul. 2018 -- Dec. 2018}
+      {\href{https://www.nchc.org.tw/}{National Center for High-Performance Computing}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{NCHC provides customers a GPU platform as a PaaS to run their ML model. To solve the resource dispatching problem in lightweight, we design a GPU computing platform prototype base on Docker containers.}
+        \resumeItemTwo{The prototype has been invited to give a short talk at \href{https://cis.ncu.edu.tw/SeminarSys/activity/TANET2018/news/19}{TANET 2018}.}
+        % \resumeItemTwo{Overhauled the system, which led to an average of {\bf 23\% improvement} on server response time by refining code, reducing database access time, and optimizing MySQL query performance.}
+        % \resumeItemTwo{Drove a testing effort, getting test coverage from an estimate of {\bf 70\% to 80\%} and reducing bug tickets by {\bf 60\%}.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Team Lead (Network Team)}{Feb. 2018 -- Sep. 2019}
+      {\href{https://it.cs.nycu.edu.tw/}{National Chiao Tung University Computer Science Computer Center}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+      \resumeItemTwo{Lead the network team to host all the networking of our department. Including service intra-net design and deployment, 3-layer internet architecture, static and dynamic routing, IPv6, network high availability, and VPN networking.}
+      \resumeItemTwo{Lead our team to deploy alarming systems for network and service via \href{https://www.nagios.org/}{Nagious}, \href{https://www.cacti.net/}{Cacti}, and \href{https://www.librenms.org/}{LibreNMS}.}
+      \resumeItemTwo{Host the co-location center for our department. Including once center rebuild and server migration.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Part-Time (Linux Team, PC Team)}{Feb. 2018 -- Sep. 2019}
+      {\href{https://it.cs.nycu.edu.tw/}{National Chiao Tung University Computer Science Computer Center}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+      \resumeItemTwo{Managing Linux workstations. Routine jobs include package updating, LDAP usage, log watching, abnormal user behavior checking, etc.}
+      \resumeItemTwo{Managing Windows PC. Deploy OS via Clonezilla and application via Ansible. Fix hardware issues.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+% \section{Honors \& Awards}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {ACM ICPC 2017 Asia Hua-Lien Regional Contest}{Sep. 2017}
+%       {Silver Medal}{Hua-Lien, Taiwan}
+%     \resumeSubheading
+%       {ACM ICPC 2017 Asia Jakarta Regional Contest}{Nov. 2017}
+%       {Honorable Mention}{Jakarta, Indonesia}
+%   \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Educational Project \& Awards}
+  \resumeSubHeadingListStart
+     \resumeSubheadingOne
+     {Awards}{}
+      \resumeItemListStart
+        \resumeItemTwo{ACM ICPC 2017 Asia Hua-Lien Regional Contest, Sep. 2017}{Silver Medal}
+        \resumeItemTwo{ACM ICPC 2017 Asia Jakarta Regional Contest, Nov. 2017}{Honorable Mention}
+        \resumeItemTwo{National Collegiate Programming Contest}{$14^{th}$ Place}
+      \resumeItemListEnd
+    \resumeSubheading
+     {Project \href{https://www.free5gc.org/}{free5GC}}{Jan. 2019 -- Jul. 2021}
+      {An open-source 5G core network}{}
+      \resumeItemListStart
+        \resumeItemTwo{The free5GC is an open-source project for 5G core networks. We aim to be the first open-sources 5G core network to make experiments and developments on 5G core quicker and easier than before.}
+        \resumeItemTwo{Mainly focus on the user plane function, UPF. Implement the N4 interface to receive rules from SMF and add them into user plane data forwarding process.}
+        \resumeItemTwo{To improve the performance of this project, comes out with my thesis: \textbf{\textit{\href{https://hdl.handle.net/11296/44vnys}{Design and Implementation of a Low­Latency and High­Throughput 5G Core Network}}}. In this thesis, we port free5GC on to \href{http://sdnfv.github.io/onvm/}{OpenNetVM} platform, which is a platform focusing on using DPDK and shared memory to improve the performance of network processing.}
+        \resumeItemTwo{In the thesis, it rich 11 times throughput in user plane and one half of latency in control plane communication.}
+      \resumeItemListEnd
+    \resumeSubheading
+     {NCTU CSCC Intranet Infrastructure}{2018}
+      {Intranet design and implementation}{}
+      \resumeItemListStart
+        \resumeItemTwo{In the path, CSCC exposed all the services in the public network with firewall protection. It is moss-grown architecture with a waste of public IP resources, non-flexible, hard to scale, and not secured.}
+        \resumeItemTwo{Redesign and deploy the intranet infrastructure for CSCC's services. Including 2-layer network architecture, NAT, firewall, DMZ, HA, and others intranet design.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+    \begin{tabular}{ l l }
+     \textbf{Programming Languages}\qquad \qquad \qquad & C/C++, Go, Python, Shell Script\\
+     \textbf{Professional Skills} & Linux, CCNP equivalent, IPv6, VPN, firewall, 5G, Docker, OS, Git, \LaTeX\\
+     \end{tabular}
+\end{document}
