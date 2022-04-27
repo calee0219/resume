@@ -116,15 +116,20 @@
   
 % \end{tabular*}
 % [hchsu0426] 看你要不要把這邊用成一行 萬一空間不夠的話
-\begin{center}
-    \textbf{{\Huge Chia-An Lee}}\\
-    \vspace{0.5em}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://calee.xyz/}{\Large Chia-An Lee}} & Email : \href{mailto:sz110010@gmail.com}{sz110010@gmail.com}\\
+  \href{http://calee.xyz/}{http://calee.xyz} & Mobile : (+886) 905-690-190 \\
+\end{tabular*}
+
+% \begin{center}
+%     \textbf{{\Huge Chia-An Lee}}\\
+%     \vspace{0.5em}
     
-    \color{black}(+886) 905-690-190
-    \color{blue}\href{mailto:sz110010@gmail.com}{sz110010@gmail.com}\\
-    % \color{black} $\diamond$
-    \color{blue}\href{https://www.linkedin.com/in/calee0219/}{LinkedIn}\color{black}$,$ \color{blue}\href{https://github.com/calee0219}{GitHub}\color{black}$,$ \color{blue}\href{https://calee.xyz/}{calee.xyz}
-\end{center}
+%     \color{black}(+886) 905-690-190, 
+%     \color{blue}\href{mailto:sz110010@gmail.com}{sz110010@gmail.com}\\
+%     % \color{black} $\diamond$
+%     \color{blue}\href{https://www.linkedin.com/in/calee0219/}{LinkedIn}\color{black}$,$ \color{blue}\href{https://github.com/calee0219}{GitHub}\color{black}$,$ \color{blue}\href{https://calee.xyz/}{calee.xyz}
+% \end{center}
 \vspace{-1em}
 
 %-----------EDUCATION-----------------
@@ -136,61 +141,60 @@
       {Master of Science in Computer Science}{Hsinchu, Taiwan}
       \resumeItemListStart
         \resumeItemTwo{Advisor: \href{https://people.cs.nctu.edu.tw/~jcc/}{Jyh-Cheng Chen} @ \href{http://wire.cs.nctu.edu.tw/}{Wireless Internet Research and Engineering Laboratory}}
-        \resumeItemTwo{Research focuses on 5G core network}
+        % \resumeItemTwo{Research focuses on 5G core network}
       \resumeItemListEnd
     \resumeSubheading
       {National Chiao Tung University}{Sep. 2015 -- Jun. 2019}
       {Bachelor of Science in Computer Science}{Hsinchu, Taiwan}
     %   \resumeItemListStart
-    %     \resumeItemTwo{Coursework: Parallel Programming, Network Programming, Computer Security, IoT, Computer Network}
-    %     \resumeItemTwo{Dean's List Fall 2016, Fall 2017, Fall 2018, Spring 2019}
+    %     \resumeItemTwo{Coursework: Computer Network, Operating System, System \& Network Administration, Computer Security}
     %   \resumeItemListEnd
   \resumeSubHeadingListEnd
   
 %-----------EXPERIENCE-----------------
-\section{Work Experience}
+\section{Research \& Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Lab Server and Network manager}{Jan. 2020 -- Jan. 2021}
       {\href{http://wire.cs.nctu.edu.tw/}{Wireless Internet Research and Engineering Laboratory}}{Hsinchu, Taiwan}
       \resumeItemListStart
-        \resumeItemTwo{Manage the server and network in lab. Including 6 servers (3 Proxmox, 1 VMWare, 1 Storage, 1 bare Linux), 2 Juniper switches, 10G switch, IP KVM, UPS, Aruba AP, etc.}
-        \resumeItemTwo{Provide services such as NFS, Samba, Wireguard VPN, NAT, Discourse forum, VM platform, etc.}
+        \resumeItemTwo{Provided services such as NFS, Samba, Wireguard VPN, NAT, Discourse forum, VM platform, and so on.}
+        \resumeItemTwo{Managed the server and network in lab. Including 6 servers (3 Proxmox, 1 VMWare, 1 Storage, 1 bare Linux), 2 Juniper switches, 10G switch, IP KVM, UPS, Aruba AP, and so on.}
       \resumeItemListEnd
     \resumeSubheading
       {Team Lead (Network Team)}{Feb. 2018 -- Sep. 2019}
       {\href{https://it.cs.nycu.edu.tw/}{Computer Center, Department of Computer Science, National Chiao Tung University}}{Hsinchu, Taiwan}
       \resumeItemListStart
-        \resumeItemTwo{Lead the network team to host all the networking of our department. Including service intra-net design and deployment, 3-layer network architecture, static and dynamic routing, IPv6, network high availability, and VPN networking.}
+        \resumeItemTwo{Leaded the network team to host all the networking of our department. Including service intra-net design and deployment, 3-layer network architecture, static and dynamic routing, IPv6, network high availability, and VPN networking.}
         % [hchsu0426] alarming system -> 應該有類似 infastructure monitoring system 之類的 可以去官網介紹借一下
-        \resumeItemTwo{Lead our team to deploy monitoring and alarming systems for network and service via \href{https://www.nagios.org/}{Nagios}, \href{https://www.cacti.net/}{Cacti}, and \href{https://www.librenms.org/}{LibreNMS}.}
+        \resumeItemTwo{Leaded the team to deploy monitoring and alarming systems for network service via \href{https://www.nagios.org/}{Nagios}, \href{https://www.cacti.net/}{Cacti}, and \href{https://www.librenms.org/}{LibreNMS}.}
         % [hchsu0426] Including once center rebuild and server migration. 整句話過於台式
-        \resumeItemTwo{Host the co-location center for our department. Including once center rebuild and server migration.}
+        \resumeItemTwo{Hosted the co-location center for our department. Including once center rebuild and server migration.}
       \resumeItemListEnd
     \resumeSubheading
       {Part-Time (Linux Team, PC Team)}{Feb. 2018 -- Sep. 2019}
       {\href{https://it.cs.nycu.edu.tw/}{Computer Center, Department of Computer Science, National Chiao Tung University}}{Hsinchu, Taiwan}
       \resumeItemListStart
-        \resumeItemTwo{Managing Linux workstations. Routine jobs include package updating, LDAP usage, log watching, abnormal user behavior checking, etc.}
-        \resumeItemTwo{Managing Windows PC. Deploy OS via Clonezilla and application via Ansible. Fix hardware issues.}
+        \resumeItemTwo{Managed Linux workstations. Routine jobs include package updating, LDAP usage, log watching, abnormal user behavior checking, and so on.}
+        \resumeItemTwo{Managed Windows PC. Deploy OS via Clonezilla and application via Ansible. Fixed hardware issues.}
       \resumeItemListEnd
     \resumeSubheading
       {Intern (Container Platform)}{Jul. 2018 -- Dec. 2018}
       {\href{https://www.nchc.org.tw/}{National Center for High-Performance Computing}}{Hsinchu, Taiwan}
       \resumeItemListStart
-        \resumeItemTwo{Propose a lightweight resource dispatching system base on Docker container and NVIDIA GPU. Make the AI PaaS provided by NCHC more flexible and scalable.}
+        \resumeItemTwo{Proposed a lightweight resource dispatching system base on Docker container and NVIDIA GPU. Made the AI PaaS provided by NCHC more flexible and scalable.}
         % \resumeItemTwo{NCHC provides customers a GPU platform as a PaaS to run their ML model. To solve the resource dispatching problem in lightweight, we design a GPU computing platform prototype base on Docker containers.}
         % [hchsu0426] 我覺得有一篇文章看你要不要就最後寫個 [TANET 2018]，或是要不要就寫 paper 的名稱
-        \resumeItemTwo{\textbf{“Implementation of lightweight GPU cloud computing AI platform”}, \textit{\href{https://cis.ncu.edu.tw/SeminarSys/activity/TANET2018/news/19}{TANET 2018}}}
+        \resumeItemTwo{Published \textbf{“Implementation of lightweight GPU cloud computing AI platform”}, \textit{\href{https://cis.ncu.edu.tw/SeminarSys/activity/TANET2018/news/19}{TANET 2018}}}
         % \resumeItemTwo{The prototype has been invited to give a short talk at \href{https://cis.ncu.edu.tw/SeminarSys/activity/TANET2018/news/19}{TANET 2018}.}
       \resumeItemListEnd
-    \resumeSubheading
-      {Intern (Blockchain)}{Jul. 2017 -- Dec. 2017}
-      {\href{https://www.nchc.org.tw/}{National Center for High-Performance Computing}}{Hsinchu, Taiwan}
-      \resumeItemListStart
-        % \resumeItemTwo{Contributed to {\bf 24+ slot games} on the game server {\bf (20k users per day)} and succeeded in handling game-related issues with cross-functional teams.}
-        \resumeItemTwo{Maintaining a private Ethereum chain inside NCHC and testing smart contract on it.}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Intern (Blockchain)}{Jul. 2017 -- Dec. 2017}
+    %   {\href{https://www.nchc.org.tw/}{National Center for High-Performance Computing}}{Hsinchu, Taiwan}
+    %   \resumeItemListStart
+    %     % \resumeItemTwo{Contributed to {\bf 24+ slot games} on the game server {\bf (20k users per day)} and succeeded in handling game-related issues with cross-functional teams.}
+    %     \resumeItemTwo{Maintained a private Ethereum chain inside NCHC and testing smart contract on it.}
+    %   \resumeItemListEnd
   \resumeSubHeadingListEnd
 % \section{Honors \& Awards}
 %   \resumeSubHeadingListStart
@@ -208,17 +212,17 @@
      {Project \href{https://www.free5gc.org/}{free5GC}}{Jan. 2019 -- Jul. 2021}
       {An open-source 5G core network}{}
       \resumeItemListStart
-        \resumeItemTwo{Develop the first open-source 5G core network project.}
-        \resumeItemTwo{Focus on the user plane function (UPF). Implement the N4 interface to receive rules from session management function (SMF) and add rules into user plane data forwarding process.}
-        \resumeItemTwo{Improve the performance of free5GC as my thesis: \textbf{\href{https://hdl.handle.net/11296/44vnys}{Design and Implementation of a Low­Latency and High­Throughput 5G Core Network}}. In the thesis, port free5GC on the \href{http://sdnfv.github.io/onvm/}{OpenNetVM} platform reaches 11 times of throughput in user plane and one-half of latency in control plane communication.}
+        \resumeItemTwo{Developed the first open-source 5G core network project.}
+        \resumeItemTwo{Focused on the user plane function (UPF). Implemented the N4 interface to receive rules from session management function (SMF) and add rules into user plane data forwarding process.}
+        \resumeItemTwo{Improved the performance of free5GC as my thesis: \textbf{\href{https://hdl.handle.net/11296/44vnys}{Design and Implementation of a Low­Latency and High­Throughput 5G Core Network}}. In the thesis, ported free5GC on the \href{http://sdnfv.github.io/onvm/}{OpenNetVM} platform reaches 11 times of throughput in user plane and one-half of latency in control plane communication.}
       \resumeItemListEnd
     \resumeSubheading
      % [hchsu0426] 主標題跟副標題差不多 而且 NCTUCSCC 整個是簡寫 可以跟前面 work experience 一致一點 或是乾脆挑一個地方放
      {NCTU CSCC Intranet Infrastructure}{Jan. 2018 -- Jan. 2019}
       {Intranet design and implementation}{}
       \resumeItemListStart
-        \resumeItemTwo{Redesign and deploy the service network of CSCC with an intranet infrastructure architecture. Including 2-layer network architecture, NAT, firewall, DMZ, HA, etc.}
-        \resumeItemTwo{Make the new network non-wasted on public IP resources, flexible, scalable, and more secure.}
+        \resumeItemTwo{Redesigned and deployed the service network of CSCC with an intranet infrastructure architecture. Including 2-layer network architecture, NAT, firewall, DMZ, HA, and so on.}
+        \resumeItemTwo{Made the new network non-wasted on public IP resources, flexible, scalable, and more secure.}
       \resumeItemListEnd
     \resumeSubheadingOne
      {Awards}{}
@@ -226,7 +230,7 @@
         % [hchsu0426] 如果原本是兩行可以這樣寫 但是現在一行應該是 Silver Medla in ACM ICPC ..... 然後後面的 2017 Sep 應該可以省略
         \resumeItemTwo{ACM ICPC 2017 Asia Hua-Lien Regional Contest, Sep. 2017}{Silver Medal}
         \resumeItemTwo{ACM ICPC 2017 Asia Jakarta Regional Contest, Nov. 2017}{Honorable Mention}
-        \resumeItemTwo{National Collegiate Programming Contest, Sep. 2017}{$14^{th}$ Place}
+        % \resumeItemTwo{National Collegiate Programming Contest, Sep. 2017}{$14^{th}$ Place}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
