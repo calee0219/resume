@@ -1,0 +1,300 @@
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemTwo}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}%\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingOne}[2]{
+  \vspace{-1pt}%\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    %   \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubItemTwo}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{}%\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{}%\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%----------Meta Data-----------------
+
+\newcommand{\name}{Chia-An Lee}
+\newcommand{\tel}{(+44) 796-667-1460}
+\newcommand{\email}{sz110010@gmail.com}
+\newcommand{\profhilo}{https://calee.xyz}
+\newcommand{\linkedin}{https://www.linkedin.com/in/calee0219}
+\newcommand{\github}{https://github.com/calee0219}
+
+%----------HEADING-----------------
+\newcommand{\headering} {
+\begin{center}
+    \textbf{{\Huge \name}}\\
+    \vspace{0.5em}
+    
+    \color{black}\tel \:
+    \color{blue}\href{mailto:\email}{\email}\\
+    % \color{black} $\diamond$
+    \color{blue}\href{\linkedin}{LinkedIn}\color{black}$,$ \color{blue}\href{\github}{GitHub}\color{black}$,$ \color{blue}\href{\profhilo}{\profhilo}
+\end{center}
+\vspace{-1em}
+}
+
+\newcommand{\compactHeadering} {
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{\profhilo}{\Large \name}} & Email : \href{mailto:\email}{\email}\\
+  \href{\profhilo}{\profhilo} & Mobile : \tel \\
+\end{tabular*}
+\vspace{-1em}
+}
+
+%-----------EDUCATION-----------------
+\newcommand{\education}{
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Yang Ming Chiao Tung University}{Sep. 2019 -- Jul. 2021}
+      {Master of Science in Computer Science}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Advisor: \href{https://people.cs.nctu.edu.tw/~jcc/}{Jyh-Cheng Chen} @ \href{http://wire.cs.nctu.edu.tw/}{Wireless Internet Research and Engineering Laboratory}}
+        \resumeItemTwo{Research focuses on 5G core network. Develop and maintain \href{https://www.free5gc.org/}{free5GC} project.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Chiao Tung University}{Sep. 2015 -- Jun. 2019}
+      {Bachelor of Science in Computer Science}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Coursework: Computer Network, Operating System, System \& Network Administration, Computer Security}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\compactEducation}{
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Yang Ming Chiao Tung University}{Sep. 2019 -- Jul. 2021}
+      {Master of Science in Computer Science}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Advisor: \href{https://people.cs.nctu.edu.tw/~jcc/}{Jyh-Cheng Chen} @ \href{http://wire.cs.nctu.edu.tw/}{Wireless Internet Research and Engineering Laboratory}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Chiao Tung University}{Sep. 2015 -- Jun. 2019}
+      {Bachelor of Science in Computer Science}{Hsinchu, Taiwan}
+  \resumeSubHeadingListEnd
+}
+%-----------EXPERIENCE-----------------
+
+\newcommand{\MetaPEBootcamper} {
+  \resumeSubheading
+    {Production Engineer}{Oct. 2022 -- Now}
+    {\href{https://www.meta.com}{Meta (Facebook)}}{London, GB}
+    \resumeItemListStart
+      \resumeItemTwo{Implemented a monitor script on deletion scheduler with Python.}
+      \resumeItemTwo{Impacted by non-performance layoff.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\LabServerAndNetworkManager} {
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lab Server and Network manager}{Jan. 2020 -- Jan. 2021}
+      {\href{http://wire.cs.nctu.edu.tw/}{Wireless Internet Research and Engineering Laboratory}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Provided services such as NFS, Samba, Wireguard VPN, NAT, Discourse forum, VM platform, and so on.}
+        \resumeItemTwo{Managed the server and network in lab. Including 6 servers (3 Proxmox, 1 VMWare, 1 Storage, 1 bare Linux), 2 Juniper switches, 10G switch, IP KVM, UPS, Aruba AP, and so on.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\TeamLeadNetworkTeam} {
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Team Lead (Network Team)}{Feb. 2018 -- Sep. 2019}
+      {\href{https://it.cs.nycu.edu.tw/}{Computer Center, Department of Computer Science, National Chiao Tung University}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Led the network team to host all the networking of our department (1000+ users). Including service intra-net design and deployment, 3-layer network architecture, static and dynamic routing, IPv6, network high availability, and VPN networking.}
+        % [hchsu0426] alarming system -> 應該有類似 infastructure monitoring system 之類的 可以去官網介紹借一下
+        \resumeItemTwo{Led our team to deploy monitoring and alarming systems for network and service via \href{https://www.nagios.org/}{Nagios}, \href{https://www.cacti.net/}{Cacti}, and \href{https://www.librenms.org/}{LibreNMS}.}
+        % [hchsu0426] Including once center rebuild and server migration. 整句話過於台式
+        \resumeItemTwo{Hosted the co-location center for our department. Including once center rebuild and server migration.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\PartTimeLinuxPC} {
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Part-Time (Linux Team, PC Team)}{Feb. 2018 -- Sep. 2019}
+      {\href{https://it.cs.nycu.edu.tw/}{Computer Center, Department of Computer Science, National Chiao Tung University}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Managed Linux workstations. Routine jobs include package updating, LDAP usage, log watching, abnormal user behavior checking, etc.}
+        \resumeItemTwo{Managed Windows PC. Deploy OS via Clonezilla and application via Ansible. Fixed hardware issues.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\TAExperience} {
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Teaching Assistant}{}
+      {\href{https://nctu.edu.tw/}{National Chiao Tung University}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{\href{https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5270}{Wireless Networks} by \href{https://people.cs.nctu.edu.tw/~jcc/}{Perf. Jyh-Cheng Chen}}
+        \resumeItemTwo{\href{https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=107&Sem=1&CrsNo=1180}{Network Planning and Management Practices} by \href{http://eclass.hust.edu.tw/instructor/jychen}{Pref. Jeng-Yueng Chen}}
+        \resumeItemTwo{\href{https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=106&Sem=2&CrsNo=5241}{Network Administration Practice} by \href{https://www.cs.nycu.edu.tw/members/detail/ysw}{Perf. Yu-Sung Wu}}
+        \resumeItemTwo{\href{https://github.com/mzshieh/snp2017}{Scratch and Python programing} by \href{https://sites.google.com/site/mzshieh/}{Prof. Min-Zheng Shieh}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\InternContainerPlatform} {
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Intern (Container Platform)}{Jul. 2018 -- Dec. 2018}
+      {\href{https://www.nchc.org.tw/}{National Center for High-Performance Computing}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Proposed a lightweight resource dispatching system base on Docker container and NVIDIA GPU. Made the AI PaaS provided by NCHC more flexible and scalable.}
+        \resumeItemTwo{Published \textbf{“Implementation of lightweight GPU cloud computing AI platform”}, \textit{\href{https://cis.ncu.edu.tw/SeminarSys/activity/TANET2018/news/19}{TANET 2018}}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\InternBlockchain} {
+    \resumeSubheading
+      {Intern (Blockchain)}{Jul. 2017 -- Dec. 2017}
+      {\href{https://www.nchc.org.tw/}{National Center for High-Performance Computing}}{Hsinchu, Taiwan}
+      \resumeItemListStart
+        \resumeItemTwo{Maintained a private Ethereum chain inside NCHC and testing smart contract on it.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+%-----------PROJECTS-----------------
+
+\newcommand{\ProjectFGC} {
+  \resumeSubHeadingListStart
+    \resumeSubheading
+     {Project \href{https://www.free5gc.org/}{free5GC}}{Jan. 2019 -- Jul. 2021}
+      {An open-source 5G core network}{}
+      \resumeItemListStart
+        \resumeItemTwo{Developed the first open-source 5G core network project.}
+        \resumeItemTwo{Focused on the user plane function (UPF). Implemented the N4 interface to receive rules from session management function (SMF) and add rules into user plane data forwarding process.}
+        \resumeItemTwo{Co-author of \textbf{\href{https://dl.acm.org/doi/10.1145/3544216.3544267}{“$L^25GC$: a low latency 5G core network based on high-performance NFV platforms”}}, \textit{\href{https://conferences.sigcomm.org/sigcomm/2022/cfp.html}{ACM SIGCOMM 2022}}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\NCTUCSCCIntranetInfrastructure} {
+  \resumeSubHeadingListStart
+     % [hchsu0426] 主標題跟副標題差不多 而且 NCTUCSCC 整個是簡寫 可以跟前面 work experience 一致一點 或是乾脆挑一個地方放
+    \resumeSubheading
+     {NCTU CSCC Intranet Infrastructure}{Jan. 2018 -- Jan. 2019}
+      {Intranet design and implementation}{}
+      \resumeItemListStart
+        \resumeItemTwo{Redesigned and deployed the service network of CSCC with an intranet infrastructure architecture. Including 2-layer network architecture, NAT, firewall, DMZ, HA, and so on.}
+        \resumeItemTwo{Made the new network non-wasted on public IP resources, flexible, scalable, and more secure.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\Awards} {
+  \resumeSubHeadingListStart
+    \resumeSubheadingOne
+     {Awards}{}
+      \resumeItemListStart
+        % [hchsu0426] 如果原本是兩行可以這樣寫 但是現在一行應該是 Silver Medla in ACM ICPC ..... 然後後面的 2017 Sep 應該可以省略
+        \resumeItemTwo{ACM ICPC 2017 Asia Hua-Lien Regional Contest, Sep. 2017}{Silver Medal}
+        \resumeItemTwo{ACM ICPC 2017 Asia Jakarta Regional Contest, Nov. 2017}{Honorable Mention}
+        \resumeItemTwo{National Collegiate Programming Contest, Sep. 2017}{$14^{th}$ Place}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+\newcommand{\SelectedAwards} {
+  \resumeSubHeadingListStart
+    \resumeSubheadingOne
+     {Awards}{}
+      \resumeItemListStart
+        % [hchsu0426] 如果原本是兩行可以這樣寫 但是現在一行應該是 Silver Medla in ACM ICPC ..... 然後後面的 2017 Sep 應該可以省略
+        \resumeItemTwo{ACM ICPC 2017 Asia Hua-Lien Regional Contest, Sep. 2017}{Silver Medal}
+        \resumeItemTwo{ACM ICPC 2017 Asia Jakarta Regional Contest, Nov. 2017}{Honorable Mention}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+}
+% \section{Honors \& Awards}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {ACM ICPC 2017 Asia Hua-Lien Regional Contest}{Sep. 2017}
+%       {Silver Medal}{Hua-Lien, Taiwan}
+%     \resumeSubheading
+%       {ACM ICPC 2017 Asia Jakarta Regional Contest}{Nov. 2017}
+%       {Honorable Mention}{Jakarta, Indonesia}
+%   \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\newcommand{\skills} {
+\section{Skills}
+    \begin{tabular}{ l l }
+     \textbf{Programming Languages}\qquad \qquad & C, C++ (proficient), Go, Python, Shell Script(prior experience)\\
+     \textbf{Professional Skills} & Linux, Cisco, Juniper, IPv6, VPN, firewall, 5G, NFS, Docker, OS, Git, \LaTeX\\
+     \end{tabular}
+}
